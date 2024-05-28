@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif;
+}
+body{
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+}
+main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    min-height: 480px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+main .card h2{
+    font-size: 22px;
+    margin-top: 30px;
+}
+main img[alt="hero"]{
+    width: 100%;
+}
+main .card .para{
+    width: 70%;
+    text-align: center;
+    font-size: 11px;
+    color: hsl(224, 23%, 55%);
+    margin-top: 10px;
+    font-weight: 500;
+}
+main .plan{
+    width: 90%;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 15px;
+}
+main .plan .planName{
+    width: 40%;
+    margin-left: -15px;
+}
+main .plan .planName p{
+    font-size: 14px;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+main .plan .planName p:nth-child(1){
+    width: 100%;
+    font-weight: 800;
+    color: black;
+}
+main .plan a{
+    font-size: 9px;
+    font-weight: 900;
+}
+main .plan img{
+    width: 35px;
+}
+.btn{
+    width: 80%;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-weight: 700;
+    font-size: 11px;
+}
+.proceed{
+    margin-top: 30px;
+}
+.cancel{
+    margin-top: 10px;
+    background: none;
+    color: hsl(224, 23%, 55%);
+}
+
+main .plan a:hover{
+    text-decoration: none;
+    color: rgb(50, 179, 230);
+}
+.proceed:hover{
+    background: rgb(50, 179, 230);
+}
+.cancel:hover{
+    color: hsl(223, 47%, 23%);
+}
+.attribution{
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.attribution a{
+    text-decoration: none;
+}
+@media (width < 420px){
+    .attribution{
+        text-align: center;
+    }
+}
